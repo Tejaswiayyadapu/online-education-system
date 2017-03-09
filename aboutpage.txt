@@ -1,0 +1,107 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 11 Trial Version - http://www.wysiwygwebbuilder.com">
+<link href="ABOUT_PAGE.css" rel="stylesheet">
+<link href="aboutpage.css" rel="stylesheet">
+<script src="jquery-1.11.3.min.js"></script>
+<script src="wb.carousel.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   var Carousel1Opts =
+   {
+      delay: 3000,
+      duration: 500,
+      easing: 'linear',
+      mode: 'forward',
+      direction: '',
+      pagination: true,
+      pagination_img_default: 'images/page_default.png',
+      pagination_img_active: 'images/page_active.png',
+      start: 0
+   };
+   $("#Carousel1").carousel(Carousel1Opts);
+   $("#Carousel1_back a").click(function()
+   {
+      $('#Carousel1').carousel('prev');
+   });
+   $("#Carousel1_next a").click(function()
+   {
+      $('#Carousel1').carousel('next');
+   });
+});
+</script>
+</head>
+<body>
+<a href="http://www.wysiwygwebbuilder.com" target="_blank"><img src="images/builtwithwwb11.png" alt="WYSIWYG Web Builder" style="position:absolute;left:1345px;top:1174px;border-width:0;z-index:250"></a>
+<div id="wb_Image1" style="position:absolute;left:4px;top:10px;width:1429px;height:936px;z-index:1;">
+<img src="images/240_F_57383438_yLFeiRQre9Ts7GbkfiudxD0VRPxZ2nbq.jpg" id="Image1" alt=""></div>
+<div id="wb_JavaScript2" style="position:absolute;left:105px;top:232px;width:545px;height:482px;z-index:2;">
+<div style="color:#000000;font-size:18px;font-family:Arial;font-weight:normal;font-style:italic;text-align:left;text-decoration:none;" id="text_scroller"></div>
+<script>
+var messages = new Array
+(
+   'The website is provides full-fledged details of various colleges, Universities, Academic institutions, courses offered by them, fees, etc.        Online education web portal project is developed in java platform. This project is implemented by taking reference of many online education sites. This web portal is implemented on basic features that are required to provide online education. In present trend usage of internet users are increasing at the same time education through online had become a new trend for sharing knowledge from all around the world. This application is useful for students from all over the world and communicate with different educational institutes and gain knowledge on the subject. ',
+   'The website is provides full-fledged details of various colleges, Universities, Academic institutions, courses offered by them, fees, etc.        Online education web portal project is developed in java platform. This project is implemented by taking reference of many online education sites. This web portal is implemented on basic features that are required to provide online education. In present trend usage of internet users are increasing at the same time education through online had become a new trend for sharing knowledge from all around the world. This application is useful for students from all over the world and communicate with different educational institutes and gain knowledge on the subject. ',
+   'The website is provides full-fledged details of various colleges, Universities, Academic institutions, courses offered by them, fees, etc.        Online education web portal project is developed in java platform. This project is implemented by taking reference of many online education sites. This web portal is implemented on basic features that are required to provide online education. In present trend usage of internet users are increasing at the same time education through online had become a new trend for sharing knowledge from all around the world. This application is useful for students from all over the world and communicate with different educational institutes and gain knowledge on the subject. '
+);
+var speed = 40;
+var currentMsg = 0;
+function doScroller(text, pos, direction)
+{
+   var text_scroller = document.getElementById('text_scroller');
+   text_scroller.innerText = '[' + text.substring(0, pos) + ']';
+
+   pos += direction;
+   if (pos > text.length)
+   {
+      setTimeout('doScroller("'+text+'",'+pos+','+(-direction)+')', speed*10);
+   }
+   else
+   {
+     if (pos < 0)
+     {
+        currentMsg++;
+        if(currentMsg >= messages.length)
+          currentMsg = 0;
+        text = messages[currentMsg];
+        direction = -direction;
+     }
+     setTimeout('doScroller("'+text+'",'+pos+','+direction+')', speed);
+   }
+}
+doScroller(messages[0], 0, 1);
+</script>
+</div>
+<div id="wb_Text1" style="position:absolute;left:496px;top:77px;width:317px;height:61px;z-index:3;text-align:left;">
+<span style="color:#FFFF00;font-family:Georgia;font-size:53px;"><strong>ABOUT..</strong></span></div>
+<div id="wb_Image2" style="position:absolute;left:864px;top:189px;width:234px;height:234px;z-index:4;">
+<img src="images/0.jpg.gif" id="Image2" alt=""></div>
+<div id="Layer1" style="position:absolute;text-align:left;left:4px;top:946px;width:1427px;height:64px;z-index:5;">
+</div>
+<div id="wb_Carousel1" style="position:absolute;left:4px;top:1012px;width:1429px;height:193px;z-index:6;overflow:hidden;">
+<div id="Carousel1" style="position:absolute">
+<div class="frame frame-1">
+</div>
+<div class="frame frame-2">
+</div>
+<div class="frame frame-3">
+</div>
+<div class="frame frame-4">
+</div>
+</div>
+<div id="Carousel1_back" style="position:absolute;left:4px;top:41%;width:30px;height:30px;z-index:999"><a style="cursor:pointer"><img alt="Back" style="border-width:0" src="images/carousel_back.png"></a></div>
+<div id="Carousel1_next" style="position:absolute;right:4px;top:41%;width:30px;height:30px;z-index:999"><a style="cursor:pointer"><img alt="Next" style="border-width:0" src="images/carousel_next.png"></a></div>
+</div>
+<div id="RollOverText1" style="position:absolute;left:153px;top:85px;width:124px;height:103px;z-index:7;">
+   <img alt="" class="image" src="images/house-home.jpg">
+   <div class="caption">
+      <div class="title"></div>
+      <p class="description"><a href ="2nd page.html">HOME</a></p>
+   </div></div>
+</body>
+</html>

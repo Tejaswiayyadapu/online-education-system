@@ -1,0 +1,568 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 11 Trial Version - http://www.wysiwygwebbuilder.com">
+<link href="guide.css" rel="stylesheet">
+<link href="guidefinal.css" rel="stylesheet">
+<script src="jquery-1.11.3.min.js"></script>
+<script src="jquery.ui.effect.min.js"></script>
+<script src="jquery.ui.effect-fade.min.js"></script>
+<script src="wb.slideshow.min.js"></script>
+<script src="jquery.ui.effect-size.min.js"></script>
+<script src="jquery.ui.effect-scale.min.js"></script>
+<script src="jquery.2dtransform.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("#SlideShow1").slideshow(
+   {
+      interval: 3000,
+      type: 'sequence',
+      effect: 'none',
+      direction: '',
+      pagination: false,
+      effectlength: 1000
+   });
+   $("#RollOver1 a").hover(function(e)
+   {
+      $(this).children("span").stop().fadeTo(500, 0);
+   }, function()
+   {
+      $(this).children("span").stop().fadeTo(500, 1);
+   });
+   $("#RollOver2 a").hover(function(e)
+   {
+      $(".hover", this).css("top","100%");
+      $(".hover", this).css("zIndex","3");
+      $(".hover", this).stop().animate({top:"0px"},{queue:false,duration:500});
+   }, function()
+   {
+      $(".hover", this).stop().animate({top:"100%"},{queue:false,duration:500});
+   });
+   $("#RollOver4 a").hover(function(e)
+   {
+      x = e.pageX - $(this).offset().left;
+      y = e.pageY - $(this).offset().top;
+      $("#RollOver4 .hover").css('z-index','3');
+      $("#RollOver4 .hover").css({'top': y + 10, 'left': x + 20, 'display':'block'});
+   }).mousemove(function(e)
+   {
+      x = e.pageX - $(this).offset().left;
+      y = e.pageY - $(this).offset().top;
+      $("#RollOver4 .hover").css({'top': y + 10,'left': x + 20});
+   }).mouseleave(function()
+   {
+      $("#RollOver4 .hover").css('z-index','1');
+      $("#RollOver4 .hover").animate({'opacity': 'hide'}, 'fast');
+   });
+   var $RollOver5_Large = $('<img style="border-width:0"/>').hide().appendTo('body');
+   $RollOver5_Large.wrap('<a/>');
+   $("#RollOver5 a").hover(function(e)
+   {
+      var cx = 682;
+      var cy = 1024;
+      var x = $(this).offset().left + $(this).parent().width()/2 - cx/2;
+      var y = $(this).offset().top + $(this).parent().height()/2 - cy/2;
+      $RollOver5_Large.hide();
+      $RollOver5_Large.closest('a').attr('href', $(this).attr('href'));
+      $RollOver5_Large.closest('a').attr('target', $(this).attr('target'));
+      $RollOver5_Large.attr('title', $(this).find('img').attr('title'));
+      $RollOver5_Large.attr('src', 'images/Jo in the kitchen.jpg').css({
+       'position' : 'absolute',
+       'z-index' : 9000,
+       'left': x,
+       'top' : y,
+       'width': cx,
+       'height': cy,
+      })
+      .stop().show('scale', 500)
+      .one('click', function()
+      {
+        $RollOver5_Large.stop().fadeOut();
+      })
+      .one('mouseout', function()
+      {
+        $RollOver5_Large.stop().hide('scale', 500);
+      });
+   }, function()
+   {
+   });
+   $("#NavigationBar1 .navbar a").hover(function()
+   {
+      if ($(this).hasClass('active'))
+         return;
+      $("img", this).stop().animate({top:"-26px"},{queue:false,duration:500});
+   }, function()
+   {
+      $("img", this).stop().animate({top:"0px"},{queue:false,duration:500});
+   })
+   $("#RollOver6 a").hover(function(e)
+   {
+      $("#RollOver6 span").animate({rotate:180,scale:10,opacity:0}, {duration:500,easing:'linear'});
+      $("#RollOver6 .hover").css({scale:10,rotate:(-180)});
+      $("#RollOver6 .hover").animate({opacity:1,rotate:0,scale:1},{duration:500,easing:'linear'});
+   }, function()
+   {
+      $("#RollOver6 .hover").animate({rotate:-180,scale:10,opacity:0}, {duration:500,easing:'linear'});
+      $("#RollOver6 span").css({scale:10,rotate:(180)});
+      $("#RollOver6 span").animate({opacity:1,rotate:0,scale:1}, {duration:500,easing:'linear'});
+   });
+});
+</script>
+</head>
+<body>
+<a href="http://www.wysiwygwebbuilder.com" target="_blank"><img src="images/builtwithwwb11.png" alt="WYSIWYG Web Builder" style="position:absolute;left:579px;top:3139px;border-width:0;z-index:250"></a>
+<div id="wb_Image1" style="position:absolute;left:1px;top:0px;width:1353px;height:1276px;z-index:1;">
+<img src="images/img0001.jpg" id="Image1" alt=""></div>
+<div id="SlideShow1" style="position:absolute;left:1px;top:0px;width:1362px;height:617px;z-index:2;">
+<img class="image" src="images/1881.jpg" alt="" title="">
+<img class="image" src="images/126699-004-4DF6AC35.jpg.pagespeed.ce.E23cXuhHw_.jpg" style="display:none;" alt="" title="">
+<img class="image" src="images/169938739-technician-checks-the-voltage.jpg" style="display:none;" alt="" title="">
+<img class="image" src="images/2012042817025389241.jpg" style="display:none;" alt="" title="">
+<img class="image" src="images/Beyoncé_-_Pavilhão_Atlântico.jpg" style="display:none;" alt="" title="">
+<img class="image" src="images/Chef-holding-chicken-entree-TS.jpg" style="display:none;" alt="" title="">
+<img class="image" src="images/index232.jpg" style="display:none;" alt="" title="">
+<img class="image" src="images/Jo in the kitchen.jpg" style="display:none;" alt="" title="">
+</div>
+<div id="wb_YouTube1" style="position:absolute;left:123px;top:698px;width:307px;height:172px;z-index:3;">
+<iframe id="YouTube1" src="https://www.youtube.com/embed/R8sUpgRqkgl?rel=1&amp;autoplay=1&amp;autohide=0&amp;fs=1" allowfullscreen></iframe></div>
+<div id="wb_Text2" style="position:absolute;left:212px;top:988px;width:435px;height:228px;z-index:4;text-align:left;">
+<span style="color:#000000;font-family:'Times New Roman';font-size:16px;">Engineering is the application of mathematics, empirical evidence and scientific, economic, social, and practical knowledge in order to invent, innovate, design, build, maintain, research, and improve structures, machines, tools, systems, components, materials, and processes.<br><br>The discipline of engineering is extremely broad, and encompasses a range of more specialized fields of engineering, each with a more specific emphasis on particular areas of applied science, technology and types of application.<br><br>The term Engineering is derived from the Latin ingenium, meaning &quot;cleverness&quot; and ingeniare, meaning &quot;to contrive, devise&quot;.</span></div>
+<div id="wb_Image2" style="position:absolute;left:1px;top:1276px;width:1353px;height:414px;z-index:5;">
+<img src="images/images1ZLW8A37.jpg" id="Image2" alt=""></div>
+<div id="wb_JavaScript2" style="position:absolute;left:173px;top:933px;width:81px;height:30px;z-index:6;">
+<div style="color:#000000;font-size:18px;font-family:Arial;font-weight:bold;font-style:normal;text-align:left;text-decoration:none;" id="text_scroller"></div>
+<script>
+var messages = new Array
+(
+   'BTECH',
+   'BTECH',
+   'BTECH'
+);
+var speed = 50;
+var currentMsg = 0;
+function doScroller(text, pos, direction)
+{
+   var text_scroller = document.getElementById('text_scroller');
+   text_scroller.innerText = '[' + text.substring(0, pos) + ']';
+
+   pos += direction;
+   if (pos > text.length)
+   {
+      setTimeout('doScroller("'+text+'",'+pos+','+(-direction)+')', speed*10);
+   }
+   else
+   {
+     if (pos < 0)
+     {
+        currentMsg++;
+        if(currentMsg >= messages.length)
+          currentMsg = 0;
+        text = messages[currentMsg];
+        direction = -direction;
+     }
+     setTimeout('doScroller("'+text+'",'+pos+','+direction+')', speed);
+   }
+}
+doScroller(messages[0], 0, 1);
+</script>
+</div>
+<div id="RollOver1" style="position:absolute;left:782px;top:995px;width:280px;height:214px;overflow:hidden;z-index:7">
+<a href="http://www.guideforengineers.com">
+<img class="hover" alt="" src="images/untitled.png">
+<span><img alt="" src="images/09.png"></span>
+</a>
+</div>
+<div id="wb_Image3" style="position:absolute;left:1px;top:1690px;width:1362px;height:355px;z-index:8;">
+<img src="images/imagesX2HDAJ2M.jpg" id="Image3" alt=""></div>
+<div id="wb_Image4" style="position:absolute;left:1px;top:2045px;width:1342px;height:300px;z-index:9;">
+<img src="images/imagesPTHV56L9.jpg" id="Image4" alt=""></div>
+<div id="wb_Image5" style="position:absolute;left:1px;top:2345px;width:1353px;height:341px;z-index:10;">
+<img src="images/responsive416.png" id="Image5" alt=""></div>
+<div id="wb_Image6" style="position:absolute;left:1px;top:2686px;width:1372px;height:433px;z-index:11;">
+<img src="images/Book-shelf-PPT-Background-1024x768[1].jpg" id="Image6" alt=""></div>
+<div id="wb_JavaScript3" style="position:absolute;left:471px;top:1286px;width:108px;height:39px;z-index:12;">
+<div style="color:%fontcolor%;font-size:18px;font-family:Arial;font-weight:bold;font-style:normal;text-align:left;text-decoration:none" id="gradienttext"></div>
+<script>
+function toHex(value) 
+{
+   var hex = "0123465789ABCDEF";
+   var result = hex.charAt(Math.floor(value / 16));
+   result += hex.charAt(value % 16);
+   return result;
+}
+var colorBegin = "#DC143C";
+var colorEnd = "#000000";
+var text = "MEDICINE";
+var r = parseInt(colorBegin.substring(1,3),16);
+var g = parseInt(colorBegin.substring(3,5),16);
+var b = parseInt(colorBegin.substring(5,7),16);
+var rr = parseInt(colorEnd.substring(1,3),16);
+var gg = parseInt(colorEnd.substring(3,5),16);
+var bb = parseInt(colorEnd.substring(5,7),16);
+var r_step = (rr - r) / text.length;
+var g_step = (gg - g) / text.length;
+var b_step = (bb - b) / text.length;
+var html = "";
+for (var x = 0; x <= text.length; x++) 
+{
+   html = html + '<span style="color:#' + toHex(r) + toHex(g) + toHex(b) + '";">' + text.charAt(x) + '</span>';
+   r += r_step;
+   g += g_step;
+   b += b_step;
+}
+document.getElementById("gradienttext").innerHTML = html;
+</script>
+
+
+</div>
+<div id="wb_Text1" style="position:absolute;left:605px;top:1305px;width:442px;height:342px;z-index:13;text-align:left;">
+<span style="color:#000000;font-family:'Times New Roman';font-size:16px;">Bachelor of Medicine, Bachelor of Surgery, or in Latin: Medicinae Baccalaureus,<br> Baccalaureus Chirurgiae (abbreviated in many ways, e.g. MBBS, MBChB, MBBCh, <br>MBBChir(Cantab), BMBCh(Oxon), BMBS), are the two first professional degrees in<br> medicine and surgery awarded upon graduation from medical school by universities<br> in countries that follow the tradition of the United Kingdom. <br>The naming suggests that they are two separate undergraduate degrees;<br> however, in practice, they are usually treated as one and conferred together, <br>and may also be awarded at graduate-level medical schools. In countries that follo<br><br>w the tradition of the United States, the equivalent medical degree is awarded<br> as Doctor of Medicine (MD).B</span></div>
+<div id="wb_JavaScript4" style="position:absolute;left:255px;top:1727px;width:110px;height:49px;z-index:14;">
+<script>
+
+var blink = 0;
+ 
+function Blink(id)
+{
+   if (blink%2==0)
+   {
+      eval('document.getElementById("' + id + '").style.display=""');
+   }
+   else
+   {
+      eval('document.getElementById("' + id + '").style.display="none"');
+   }
+   if (blink<1)
+   {
+      blink++;
+   } 
+   else
+   {
+      blink--;
+   }
+   setTimeout("Blink('"+id+"')", 100);
+}
+document.write('<div id="wb_blink" style="display:none;color:#FF0000;font-size:18px;font-family:Georgia;font-weight:normal;font-style:normal;text-align:left;text-decoration:none">DANCE<\/div>');
+Blink('wb_blink');
+</script>
+</div>
+<div id="wb_Text4" style="position:absolute;left:190px;top:1804px;width:370px;height:209px;z-index:15;text-align:left;">
+<span style="color:#000000;font-family:'Times New Roman';font-size:16px;">Dance is a performance art form consisting of purposefully selected sequences<br> of human movement. This movement has aesthetic and symbolic value, and is <br>acknowledged as dance by performers and observers within a particular culture.<br> Dance can be categorized and described by its choreography, by its <br>repertoire of movements, or by its historical period or place of origin.<br></span></div>
+<div id="wb_JavaScript5" style="position:absolute;left:81px;top:2088px;width:123px;height:40px;z-index:16;">
+<div style="color:#000000;font-size:1px;font-family:Georgia;font-weight:bold;font-style:normal;text-align:center;text-decoration:none;" id="text_zoomer"></div>
+<script>
+var messages = new Array
+(
+   'SINGING',
+   'SINGING',
+   'SINGING'
+);
+var currentMsg = 0;
+var fontSize = 0;
+var fontSizeMax = 16;
+var delay = 2;
+var speed = 10;
+
+function scaleText() 
+{
+   if (fontSize < fontSizeMax) 
+   {
+      var text_zoomer = document.getElementById("text_zoomer");
+      text_zoomer.style.fontSize = fontSize + "px";
+      fontSize++;
+      setTimeout(function(){scaleText();}, speed);
+    }
+}
+function zoomText() 
+{
+   if (currentMsg >= messages.length) 
+   {
+      currentMsg = 0;
+   }
+   var text_zoomer = document.getElementById("text_zoomer");
+   text_zoomer.innerHTML = messages[currentMsg];
+   fontSize = 0;
+   scaleText();
+   currentMsg++;
+   setTimeout(function(){zoomText();}, delay*1000);
+}
+zoomText();
+</script>
+</div>
+<div id="wb_Text3" style="position:absolute;left:212px;top:2145px;width:337px;height:210px;z-index:17;text-align:left;">
+<span style="color:#000000;font-family:'Times New Roman';font-size:16px;">When people sing they use the air in the lungs. The speed that the air comes out of the lungs can be controlled with the muscle called the diaphragm which goes across the front of the body below the ribs. People who have singing lessons spend a lot of time practising “breath control”.</span><span style="color:#000000;font-family:Arial;font-size:13px;"><br><br><br><br><br><br></span></div>
+<div id="wb_JavaScript6" style="position:absolute;left:272px;top:2379px;width:116px;height:63px;z-index:18;">
+<div style="position:relative;left:0;top:0;">
+<span id="text_highlighter" style="position:absolute;left:0;top:0;font-size:18px;font-family:Arial;font-weight:normal;font-style:normal;text-decoration:none;background-color:#FFFF00;clip:rect(0px 0px auto 0px)"></span>
+</div>
+<script>
+/*
+Highligher Scroller script- By JavaScript Kit
+For this and over 400+ free scripts, visit http://www.javascriptkit.com/
+This notice must stay intact
+*/
+var tickercontents=new Array()
+tickercontents[0]='SPORTS';
+tickercontents[1]='SPORTS';
+tickercontents[2]='SPORTS';
+
+// delay btw messages
+var tickdelay = 3000; 
+// 10 pixels at a time.
+var highlightspeed = 10; 
+
+////Do not edit pass this line////////////////
+var currentmessage = 0;
+var clipwidth = 0;
+function changetickercontent()
+{
+   crosstick.style.clip="rect(0px 0px auto 0px)";
+   crosstick.innerHTML=tickercontents[currentmessage];
+   highlightmsg();
+}
+function highlightmsg()
+{
+   var msgwidth=crosstick.offsetWidth;
+   if (clipwidth<msgwidth)
+   {
+      clipwidth+=highlightspeed;
+      crosstick.style.clip="rect(0px "+clipwidth+"px auto 0px)";
+      beginclip=setTimeout("highlightmsg()",20);
+   }
+   else
+   {
+      clipwidth=0;
+      clearTimeout(beginclip);
+      if (currentmessage==tickercontents.length-1) currentmessage=0;
+      else currentmessage++;
+      setTimeout("changetickercontent()",tickdelay);
+   }
+}
+function start_ticking()
+{
+   crosstick = document.getElementById("text_highlighter");
+   crosstickParent=crosstick.parentNode? crosstick.parentNode : crosstick.parentElement;
+   if (parseInt(crosstick.offsetHeight)>0)
+      crosstickParent.style.height=crosstick.offsetHeight+'px';
+   else
+      setTimeout("crosstickParent.style.height=crosstick.offsetHeight+'px'",100); 
+   changetickercontent();
+}
+start_ticking();
+</script>
+</div>
+<div id="wb_Text5" style="position:absolute;left:190px;top:2482px;width:390px;height:95px;z-index:19;text-align:left;">
+<span style="color:#F5F5F5;font-family:'Times New Roman';font-size:16px;">Sport (UK) or sports (US) are all forms of usually competitive physical activity or games which,[1] through casual or organised participation, aim to use, maintain or improve physical ability and skills while providing enjoyment to participants, and in some cases, entertainment for spectators.</span></div>
+<div id="wb_Text6" style="position:absolute;left:73px;top:2810px;width:623px;height:168px;z-index:20;text-align:left;">
+<span style="color:#000000;font-family:'Times New Roman';font-size:16px;">Cooking or cookery is the art, technology and craft of preparing food for consumption with the use of heat. Cooking techniques and ingredients vary widely across the world, from grilling food over an open fire to using electric stoves, to baking in various types of ovens, reflecting unique environmental, economic, and cultural traditions and trends. The ways or types of cooking also depend on the skill and type of training an individual cook has. Cooking is done both by people in their own dwellings and by professional cooks and chefs in restaurants and other food establishments. Cooking can also occur through chemical reactions without the presence of heat, most notably with ceviche, a traditional South American dish where fish is cooked with the acids in lemon or lime juice</span><span style="color:#000000;font-family:Arial;font-size:13px;">.<br></span></div>
+<div id="RollOver2" style="position:absolute;left:741px;top:1727px;width:229px;height:280px;overflow:hidden;z-index:21">
+<a href="http://ultimatedanceguide.com/#&panel1-1">
+<img class="hover" alt="" src="images/2a274276c627e4feed91167c63e0c9c0.jpg">
+<span><img alt="" src="images/dancing.jpg"></span>
+</a>
+</div>
+<div id="RollOver3" style="position:absolute;left:720px;top:2070px;width:250px;height:250px;overflow:hidden;z-index:22">
+<a href="http://your-personal-singing-guide.com/">
+<img class="hover" alt="" src="images/tumblr_inline_nhsdvmgcpr1s7dv83.jpg">
+<span><img alt="" src="images/Beyoncé_-_Pavilhão_Atlântico.jpg"></span>
+</a>
+</div>
+<div id="RollOver4" style="position:absolute;left:720px;top:2379px;width:250px;height:250px;z-index:23">
+<a href="http://www.skysports.com/watch/tv-guide">
+<img class="hover" alt="" src="images/Delhi-2010-Womens-Badminton-Singles-95c.jpg">
+<span><img alt="" src="images/6.png"></span>
+</a>
+</div>
+<div id="RollOver5" style="position:absolute;left:797px;top:2728px;width:250px;height:250px;overflow:hidden;z-index:24">
+<a href="http://runescape.wikia.com/wiki/Pay-to-play_Cooking_training">
+<img class="hover" alt="" src="images/healthy_cooking-Optimized.jpg">
+
+</a>
+</div>
+<div id="wb_JavaScript1" style="position:absolute;left:615px;top:625px;width:183px;height:73px;z-index:25;">
+<script>
+
+/*
+RAINBOW TEXT Script by Matt Hedgecoe (c) 2002
+Featured on JavaScript Kit
+For this script, visit http://www.javascriptkit.com
+*/
+
+var text="GUIDE";
+var speed=80;
+
+if (document.all||document.getElementById)
+{
+   document.write('<div style="font-family:Georgia;font-size:72px;font-weight:normal;font-style:normal;text-align:left;text-decoration:none;" id="highlight">' + text + '<\/div>');
+   var storetext=document.getElementById? document.getElementById("highlight") : document.all.highlight;
+}
+else
+   document.write(text);
+
+var hex=new Array("00","14","28","3C","50","64","78","8C","A0","B4","C8","DC","F0");
+var r=1;
+var g=1;
+var b=1;
+var seq=1;
+function changetext()
+{
+   rainbow="#"+hex[r]+hex[g]+hex[b];
+   storetext.style.color=rainbow;
+}
+function change()
+{
+   if (seq==6)
+   {
+      b--;
+      if (b==0)
+        seq=1;
+   }
+   if (seq==5)
+   {
+      r++;
+      if (r==12)
+         seq=6;
+   }
+   if (seq==4)
+   {
+      g--;
+      if (g==0)
+         seq=5;
+   }
+   if (seq==3)
+   {
+      b++;
+      if (b==12)
+         seq=4;
+   }
+   if (seq==2)
+   {
+      r--;
+      if (r==0)
+         seq=3;
+   }
+   if (seq==1)
+   {
+      g++;
+      if (g==12)
+         seq=2;
+   }
+   changetext();
+}
+
+function starteffect()
+{
+   if (document.all||document.getElementById)
+      flash=setInterval("change()",speed);
+}
+starteffect();
+</script>
+
+</div>
+<div id="NavigationBar1" style="position:absolute;left:970px;top:741px;width:109px;height:90px;z-index:26;">
+<ul class="navbar">
+<li><a href="2nd page.html"><img alt="" src="images/img0002.png"></a></li>
+<li><a href="aboutpage.html"><img alt="" src="images/img0003.png"></a></li>
+<li><a href="educationfinal.html"><img alt="" src="images/img0004.png"></a></li>
+</ul>
+</div>
+<div id="wb_JavaScript7" style="position:absolute;left:108px;top:2738px;width:82px;height:23px;z-index:27;">
+<div style="color:#000000;font-size:18px;font-family:Georgia;font-weight:bold;font-style:normal;text-align:left;text-decoration:none" id="jumping_letters"></div>
+<script>
+message="COOKING";
+mes=new Array();
+mes[0]=-1;
+mes[1]=-4;
+mes[2]=-7;
+mes[3]=-10;
+mes[4]=-7;
+mes[5]=-4;
+mes[6]=-1;
+num=0;
+num2=0;
+txt="";
+
+function jump0()
+{
+   if (message.length > 6)
+   {
+      for(i=0; i!=message.length; i++)
+      {
+         txt = txt + "<span style='position:relative;' id='n"+i+"'>"+message.charAt(i)+"</span>";
+      }
+      jump = document.getElementById("jumping_letters");
+      jump.innerHTML = txt;
+      txt = "";
+      jump1a();
+   }
+}
+function jump1a()
+{
+   nfinal = document.getElementById("n0");
+   nfinal.style.left = (-num2).toString() + "px";
+   if (num2 != 9)
+   {
+      num2 = num2 + 3;
+      setTimeout("jump1a()", 50);
+   }
+   else
+   {
+      jump1b();
+   }
+}
+function jump1b()
+{
+   nfinal = document.getElementById("n0");
+   nfinal.style.left = (-num2).toString() + "px";
+   if (num2 != 0)
+   {
+      num2 = num2-3;
+      setTimeout("jump1b()",50);
+   }
+   else
+   {
+      jump2();
+   }
+}
+function jump2()
+{
+   txt = "";
+   for(i=0;i != message.length; i++)
+   {
+      if (i+num > -1 && i+num < 7)
+      {
+         txt = txt + "<span style='position:relative;top:" + mes[i+num] + "px'>" + message.charAt(i) + "</span>";
+      }
+      else
+      {
+         txt = txt + "<span>" + message.charAt(i) + "</span>";
+      }
+   }
+   jump = document.getElementById("jumping_letters");
+   jump.innerHTML = txt;
+   txt = "";
+   if (num != (-message.length))
+   {
+      num--;
+      setTimeout("jump2()",50);
+   }
+   else
+   {
+      num=0;
+      setTimeout("jump0()",50);
+   }
+}
+jump0();
+</script></div>
+<div id="RollOver6" style="position:absolute;left:185px;top:1385px;width:248px;height:198px;overflow:hidden;z-index:28">
+<a href="https://my.som.uq.edu.au/mc/mbbs-guide.aspx">
+<img class="hover" alt="" src="images/2012042817025389241.jpg">
+<span><img alt="" src="images/images (1).jpg"></span>
+</a>
+</div>
+</body>
+</html>

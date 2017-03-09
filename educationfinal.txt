@@ -1,0 +1,264 @@
+
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 11 Trial Version - http://www.wysiwygwebbuilder.com">
+<link href="EDUCATION_PAGE.css" rel="stylesheet">
+<link href="educationfinal.css" rel="stylesheet">
+<script src="jquery-1.11.3.min.js"></script>
+<script src="jquery.ui.effect.min.js"></script>
+<script src="jquery.ui.effect-fade.min.js"></script>
+<script src="jquery.ui.effect-scale.min.js"></script>
+<script src="jquery.ui.effect-size.min.js"></script>
+<script src="jquery.ui.effect-puff.min.js"></script>
+<script src="wb.slideshow.min.js"></script>
+<script src="jquery.2dtransform.js"></script>
+<script src="jquery.ui.effect-explode.min.js"></script>
+<script src="jquery.ui.effect-drop.min.js"></script>
+<script src="jquery.ui.effect-bars.min.js"></script>
+<script src="jquery.ui.effect-blast.min.js"></script>
+<script src="jquery.ui.effect-squares.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("#SlideShow2").slideshow(
+   {
+      interval: 2000,
+      type: 'sequence',
+      effect: 'zoominout',
+      direction: '',
+      pagination: false,
+      effectlength: 1000
+   });
+   $("#SlideShow1").slideshow(
+   {
+      interval: 3000,
+      type: 'sequence',
+      effect: 'newspaper',
+      direction: '',
+      pagination: false,
+      effectlength: 2000
+   });
+   $("#SlideShow3").slideshow(
+   {
+      interval: 3000,
+      type: 'sequence',
+      effect: 'explode',
+      direction: '',
+      pagination: false,
+      effectlength: 2000
+   });
+   $("#SlideShow4").slideshow(
+   {
+      interval: 3000,
+      type: 'sequence',
+      effect: 'drop',
+      direction: 'down',
+      pagination: false,
+      effectlength: 2000
+   });
+   $("#SlideShow5").slideshow(
+   {
+      interval: 4000,
+      type: 'sequence',
+      effect: 'bars',
+      direction: 'curtain',
+      count: 8,
+      pagination: false,
+      effectlength: 1000
+   });
+   $("#SlideShow6").slideshow(
+   {
+      interval: 5000,
+      type: 'sequence',
+      effect: 'blast',
+      direction: '',
+      pagination: false,
+      effectlength: 2000
+   });
+   $("#SlideShow7").slideshow(
+   {
+      interval: 5000,
+      type: 'sequence',
+      effect: 'swirl',
+      direction: '',
+      pagination: false,
+      effectlength: 2000
+   });
+   $("#RollOverText1").hover(function()
+   {
+      var y = $(this).height() - $(".caption", this).height();
+      $(".caption", this).css("top", y);
+      $(".caption", this).stop().animate({opacity: 0.60},{queue:false, duration:500});
+   }, function()
+   {
+      $(".caption", this).stop().animate({opacity: 0},{queue:false, duration:500});
+   });
+   $("#RollOverText2").hover(function()
+   {
+      var y = $(this).height() - $(".caption", this).height();
+      $(".caption", this).css("top", y);
+      $(".caption", this).stop().animate({opacity: 0.60},{queue:false, duration:500});
+   }, function()
+   {
+      $(".caption", this).stop().animate({opacity: 0},{queue:false, duration:500});
+   });
+   $("#RollOverText3").hover(function()
+   {
+      var y = $(this).height() - $(".caption", this).height();
+      $(".caption", this).css("top", y);
+      $(".caption", this).stop().animate({opacity: 0.60},{queue:false, duration:500});
+   }, function()
+   {
+      $(".caption", this).stop().animate({opacity: 0},{queue:false, duration:500});
+   });
+});
+</script>
+</head>
+<body>
+<a href="http://www.wysiwygwebbuilder.com" target="_blank"><img src="images/builtwithwwb11.png" alt="WYSIWYG Web Builder" style="position:absolute;left:1307px;top:2761px;border-width:0;z-index:250"></a>
+<div id="SlideShow2_frame" style="position:absolute;left:315px;top:210px;margin-left:-12px;margin-top:-12px;z-index:1;">
+<img style="border-width:0;left:0;top:0;" src="images/img0001.png" alt="">
+</div>
+<div id="SlideShow2" style="position:absolute;left:315px;top:210px;width:656px;height:358px;border:2px #000000 solid;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;z-index:1;">
+<img class="image" src="images/9.png" alt="" title="">
+<img class="image" src="images/67.png" style="display:none;" alt="" title="">
+<img class="image" src="images/bharathanatyam.jpg" style="display:none;" alt="" title="">
+<img class="image" src="images/love-to-cook1.jpg" style="display:none;" alt="" title="">
+<img class="image" src="images/tumblr_inline_nhsdvmgcpr1s7dv83.jpg" style="display:none;" alt="" title="">
+<img class="image" src="images/09.png" style="display:none;" alt="" title="">
+<img class="image" src="images/234.png" style="display:none;" alt="" title="">
+</div>
+<div id="SlideShow1" style="position:absolute;left:61px;top:683px;width:280px;height:321px;z-index:2;">
+<img class="image" src="images/09.png" alt="" title="">
+<img class="image" src="images/9.png" style="display:none;" alt="" title="">
+<img class="image" src="images/34.png" style="display:none;" alt="" title="">
+<img class="image" src="images/untitled.png" style="display:none;" alt="" title="">
+<img class="image" src="images/untitled12.png" style="display:none;" alt="" title="">
+<img class="image" src="images/1881.jpg" style="display:none;" alt="" title="">
+<img class="image" src="images/index232.jpg" style="display:none;" alt="" title="">
+</div>
+<div id="wb_Text1" style="position:absolute;left:73px;top:1038px;width:281px;height:2px;z-index:3;text-align:left;">
+&nbsp;</div>
+<marquee direction="up" scrolldelay="90" scrollamount="6" behavior="scroll" loop="0" style="position:absolute;left:61px;top:1119px;width:278px;height:54px;z-index:4;" id="Marquee1" onmouseover="this.stop()" onmouseout="this.start()"><span style="color:#000000;font-family:'Lucida Sans Unicode';font-size:16px;"><a href="https://en.wikipedia.org/wiki/Bachelor_of_Technology">T</a></span><span style="color:#000000;font-family:'Lucida Sans Unicode';font-size:12px;"><a href="https://en.wikipedia.org/wiki/Bachelor_of_Technology">he <strong>Bachelor of Technology </strong>is an underradated ........</a></span></marquee>
+<div id="SlideShow3" style="position:absolute;left:476px;top:691px;width:280px;height:314px;z-index:5;">
+<img class="image" src="images/2012042817025389241.jpg" alt="" title="">
+<img class="image" src="images/download.jpg" style="display:none;" alt="" title="">
+<img class="image" src="images/images (1).jpg" style="display:none;" alt="" title="">
+<img class="image" src="images/images (1).jpg" style="display:none;" alt="" title="">
+</div>
+<marquee direction="up" scrolldelay="90" scrollamount="6" behavior="scroll" loop="0" style="position:absolute;left:492px;top:1113px;width:270px;height:59px;z-index:6;" id="Marquee2" onmouseover="this.stop()" onmouseout="this.start()"><span style="color:#000000;font-family:'Times New Roman';font-size:16px;"> </span><span style="color:#000000;font-family:'Times New Roman';font-size:13px;"><a href="https://en.wikipedia.org/wiki/Doctor">Docter the holder of an accredited doctoral<br> graduate degree Professionals frequently <br>referred to as &quot;doctor&quot;.<br></a></span></marquee>
+<div id="SlideShow4" style="position:absolute;left:934px;top:693px;width:264px;height:311px;z-index:7;">
+<img class="image" src="images/Singing-3-singing-35633124-650-650.png" alt="" title="">
+<img class="image" src="images/tumblr_inline_nhsdvmgcpr1s7dv83.jpg" style="display:none;" alt="" title="">
+<img class="image" src="images/Beyoncé_-_Pavilhão_Atlântico.jpg" style="display:none;" alt="" title="">
+<img class="image" src="images/maxresdefault.jpg" style="display:none;" alt="" title="">
+<img class="image" src="images/Singing-3-singing-35633124-650-650 (1).png" style="display:none;" alt="" title="">
+<img class="image" src="images/singing-class-clipart-Beati_Chorum.png" style="display:none;" alt="" title="">
+</div>
+<marquee direction="up" scrolldelay="90" scrollamount="6" behavior="scroll" loop="0" style="position:absolute;left:945px;top:1120px;width:251px;height:60px;z-index:8;" id="Marquee3" onmouseover="this.stop()" onmouseout="this.start()"><span style="color:#000000;font-family:Georgia;font-size:12px;"><a href="https://www.bing.com/search?q=singing+wiki&form=EDGEAR&qs=PF&cvid=d63d5dc531034abfa7ab7c2aff8adaa7&pq=singing%20wiki">Singing menas making music with the voice<br>.Singing is probably the way......<br></a></span></marquee>
+<div id="SlideShow5" style="position:absolute;left:290px;top:1236px;width:233px;height:281px;z-index:9;">
+<img class="image" src="images/64.jpg" alt="" title="">
+<img class="image" src="images/bharathanatyam.jpg" style="display:none;" alt="" title="">
+<img class="image" src="images/2a274276c627e4feed91167c63e0c9c0.jpg" style="display:none;" alt="" title="">
+<img class="image" src="images/58c9a2446fa9e161a751c05e2d7c4452.jpg" style="display:none;" alt="" title="">
+<img class="image" src="images/126699-004-4DF6AC35.jpg.pagespeed.ce.E23cXuhHw_.jpg" style="display:none;" alt="" title="">
+<img class="image" src="images/bharathanatyam.jpg" style="display:none;" alt="" title="">
+<img class="image" src="images/dancing.jpg" style="display:none;" alt="" title="">
+<img class="image" src="images/images (1) (1).jpg" style="display:none;" alt="" title="">
+</div>
+<marquee direction="down" scrolldelay="90" scrollamount="6" behavior="scroll" loop="0" style="position:absolute;left:290px;top:1564px;width:231px;height:64px;z-index:10;" id="Marquee4" onmouseover="this.stop()" onmouseout="this.start()"><span style="color:#000000;font-family:Georgia;font-size:13px;"><a href="https://www.bing.com/search?q=dance+wiki&form=EDGNTC&qs=PF&cvid=c36f4100bad644cb88bf0431c325fe2c&pq=dance%20wiki">Dance is performance art form of consisting of<br> purposefully selected sequences of human movement..</a></span></marquee>
+<div id="SlideShow6" style="position:absolute;left:782px;top:1214px;width:249px;height:291px;z-index:11;">
+<img class="image" src="images/love-to-cook1.jpg" alt="" title="">
+<img class="image" src="images/chef-graphics-clipart-1.jpg" style="display:none;" alt="" title="">
+<img class="image" src="images/Chef-holding-chicken-entree-TS.jpg" style="display:none;" alt="" title="">
+<img class="image" src="images/download (1).jpg" style="display:none;" alt="" title="">
+<img class="image" src="images/healthy_cooking-Optimized.jpg" style="display:none;" alt="" title="">
+<img class="image" src="images/imagesAVBR2FSU.jpg" style="display:none;" alt="" title="">
+</div>
+<marquee direction="right" scrolldelay="90" scrollamount="6" behavior="scroll" loop="0" style="position:absolute;left:794px;top:1564px;width:222px;height:64px;z-index:12;" id="Marquee5" onmouseover="this.stop()" onmouseout="this.start()"><span style="color:#000000;font-family:Arial;font-size:13px;"><a href="https://www.bing.com/search?q=cooking+wiki&qs=n&form=QBRE&pq=cooking+wiki&sc=0-0&sp=-1&sk=&cvid=26B7A98D007D448CAA513C59424458AC">Cooking is the art technology and craft of preparing <br>food for consumption with the use of heat</a></span></marquee>
+<div id="SlideShow7" style="position:absolute;left:508px;top:1737px;width:314px;height:325px;z-index:13;">
+<img class="image" src="images/881t6-1412925022 (1).jpg" alt="" title="">
+<img class="image" src="images/6.png" style="display:none;" alt="" title="">
+<img class="image" src="images/234.png" style="display:none;" alt="" title="">
+<img class="image" src="images/unt.png" style="display:none;" alt="" title="">
+<img class="image" src="images/234.png" style="display:none;" alt="" title="">
+<img class="image" src="images/200403818-001_XS.jpg" style="display:none;" alt="" title="">
+<img class="image" src="images/Delhi-2010-Womens-Badminton-Singles-95c.jpg" style="display:none;" alt="" title="">
+<img class="image" src="images/duke_600x300.jpg" style="display:none;" alt="" title="">
+</div>
+<marquee direction="left" scrolldelay="90" scrollamount="6" behavior="scroll" loop="0" style="position:absolute;left:523px;top:2104px;width:269px;height:70px;z-index:14;" id="Marquee6" onmouseover="this.stop()" onmouseout="this.start()"><span style="color:#000000;font-family:Georgia;font-size:13px;"><a href="https://www.bing.com/search?q=sports+wiki&form=EDGNTC&qs=PF&cvid=53664cd0d7eb43f2937b33bfc7eb6dc8&pq=sports%20wiki">Sport is acompetitive physiacl activity <br>through casual or organised participation</a></span></marquee>
+<div id="RollOver2" style="position:absolute;left:201px;top:268px;width:0px;height:0px;overflow:hidden;z-index:15">
+<a href="">
+<img class="hover" alt="" src="">
+<span><img alt="" src=""></span>
+</a>
+</div>
+<div id="RollOverText1" style="overflow:hidden;position:absolute;left:89px;top:174px;width:112px;height:94px;z-index:16;">
+   <img alt="" class="image" src="images/house-home.jpg">
+   <div class="caption">
+      <div class="title"></div>
+      <p class="description"><a href="2nd page.html">HOME</a></p>
+   </div>
+</div>
+<div id="RollOverText2" style="overflow:hidden;position:absolute;left:90px;top:298px;width:111px;height:76px;z-index:17;">
+   <img alt="" class="image" src="images/Guide.png">
+   <div class="caption">
+      <div class="title"></div>
+      <p class="description"><a href="guidefinal.html">STUDENTS GUIDE</a></p>
+   </div>
+</div>
+<div id="RollOverText3" style="overflow:hidden;position:absolute;left:89px;top:410px;width:117px;height:68px;z-index:18;">
+   <img alt="" class="image" src="images/images (3) (1).jpg">
+   <div class="caption">
+      <div class="title"></div>
+      <p class="description"><a href="aboutpage.html">KNOW ABOUT US</a></p>
+   </div>
+</div>
+<div id="wb_JavaScript1" style="position:absolute;left:402px;top:12px;width:429px;height:54px;z-index:19;">
+<div style="color:#FAFAD2;font-size:1px;font-family:Georgia;font-weight:bold;font-style:normal;text-align:center;text-decoration:none;" id="text_zoomer"></div>
+<script>
+var messages = new Array
+(
+   'EDUCATION TYPES',
+   'EDUCATION TYPES',
+   'EDUCATION TYPES'
+);
+var currentMsg = 0;
+var fontSize = 0;
+var fontSizeMax = 72;
+var delay = 2;
+var speed = 12;
+
+function scaleText() 
+{
+   if (fontSize < fontSizeMax) 
+   {
+      var text_zoomer = document.getElementById("text_zoomer");
+      text_zoomer.style.fontSize = fontSize + "px";
+      fontSize++;
+      setTimeout(function(){scaleText();}, speed);
+    }
+}
+function zoomText() 
+{
+   if (currentMsg >= messages.length) 
+   {
+      currentMsg = 0;
+   }
+   var text_zoomer = document.getElementById("text_zoomer");
+   text_zoomer.innerHTML = messages[currentMsg];
+   fontSize = 0;
+   scaleText();
+   currentMsg++;
+   setTimeout(function(){zoomText();}, delay*1000);
+}
+zoomText();
+</script>
+</div>
+<div id="wb_Image1" style="position:absolute;left:276px;top:2289px;width:742px;height:404px;z-index:20;"><a href="lastpage.html">
+<img src="images/img0002.png" id="Image1" alt=""></a></div>
+</body>
+</html>

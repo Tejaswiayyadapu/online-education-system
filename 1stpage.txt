@@ -1,0 +1,92 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 11 Trial Version - http://www.wysiwygwebbuilder.com">
+<link href="1ST_PAGE.css" rel="stylesheet">
+<link href="1st page.css" rel="stylesheet">
+</head>
+<body>
+<a href="http://www.wysiwygwebbuilder.com" target="_blank"><img src="images/builtwithwwb11.png" alt="WYSIWYG Web Builder" style="position:absolute;left:441px;top:967px;border-width:0;z-index:250"></a>
+<div id="wb_Text1" style="position:absolute;left:627px;top:345px;width:313px;height:40px;z-index:1;text-align:left;">
+<span style="color:#FFFFFF;font-family:Georgia;font-size:20px;"><a href="2nd page.html" target="_blank">LOADING...</a></span><span style="color:#000000;font-family:Arial;font-size:13px;"><br></span></div>
+<div style="z-index:2">
+<script>
+/* Cursor Trailor Text- By Peter Gehrig (http://www.24fun.com/) */
+var x = 0, y = 0;
+var step = 20;
+var flag = 0;
+
+var message = "PROJECT EXPO";
+message = message.split("");
+
+var xpos = new Array();
+for (i=0; i<message.length; i++) 
+{
+   xpos[i]=-50;
+}
+
+var ypos = new Array();
+for (i=0; i<message.length; i++) 
+{
+   ypos[i]=-50;
+}
+
+function handlerMM(e)
+{
+   if (!e) 
+      var e = window.event||window.Event; 
+
+   if ('undefined' != typeof e.pageX) 
+   { 
+      x = e.pageX; 
+      y = e.pageY; 
+   } 
+   else 
+   { 
+      x = e.clientX + document.body.scrollLeft; 
+      y = e.clientY + document.body.scrollTop; 
+   } 
+   flag=1;
+}
+
+function makesnake() 
+{
+   for (i=message.length-1; i>=1; i--) 
+   {
+      xpos[i] = xpos[i-1] + step;
+      ypos[i] = ypos[i-1];
+   }
+   xpos[0] = x + step;
+   ypos[0] = y;
+	
+   for (i=0; i<message.length; i++) 
+   {
+      var id = 'span'+i;
+      var thisspan = document.getElementById(id);
+      thisspan.style.left = xpos[i] + "px";
+      thisspan.style.top = ypos[i] + "px";
+   }
+   var timer=setTimeout("makesnake()",30);
+}
+</script>
+
+<script>
+for (i=0;i<=message.length-1;i++) 
+{
+   document.write("<span id='span"+i+"' style='position:absolute;left:0px;top:-50px;font-size:28px;font-family:Georgia;font-weight:normal;font-style:italic;text-decoration:none;color:#1E90FF;'>");
+   document.write(message[i]);
+   document.write("<\/span>");
+}
+
+if (document.layers)
+{
+   document.captureEvents(Event.MOUSEMOVE);
+}
+document.onmousemove = handlerMM;
+makesnake();
+</script></div>
+</body>
+</html>

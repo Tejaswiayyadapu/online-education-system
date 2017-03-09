@@ -1,0 +1,368 @@
+body
+{
+   background-color: #FFFFFF;
+   background-image: url(images/slider-background.jpg);
+   background-attachment: scroll;
+   background-position: left top;
+   background-repeat: repeat;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
+#SlideShow2 .image
+{
+   border-width: 0;
+   -moz-border-radius: 2px;
+   -webkit-border-radius: 2px;
+   border-radius: 2px;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#SlideShow2
+{
+   -moz-box-shadow: 0px 0px 5px #FFC0CB;
+   -webkit-box-shadow: 0px 0px 5px #FFC0CB;
+   box-shadow: 0px 0px 5px #FFC0CB;
+}
+#SlideShow1 .image
+{
+   border-width: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#SlideShow1
+{
+   -webkit-animation: animate-background 500ms linear 0ms infinite normal;
+   -moz-animation: animate-background 500ms linear 0ms infinite normal;
+   animation: animate-background 500ms linear 0ms infinite normal;
+}
+#wb_Text1 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text1 div
+{
+   text-align: left;
+}
+#Marquee1
+{
+   background-color: #D3D3D3;
+   background-image: none;
+   border: 1px #000000 solid;
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+   text-align: center;
+}
+#SlideShow3 .image
+{
+   border-width: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#Marquee2
+{
+   background-color: #C0C0C0;
+   background-image: none;
+   border: 1px #000000 solid;
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+   text-align: center;
+}
+#SlideShow4 .image
+{
+   border-width: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#Marquee3
+{
+   background-color: #D3D3D3;
+   background-image: none;
+   border: 1px #000000 solid;
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+   text-align: center;
+}
+#SlideShow5 .image
+{
+   border-width: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#Marquee4
+{
+   background-color: #EEEEEE;
+   background-image: none;
+   border: 1px #000000 solid;
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+   text-align: center;
+}
+#SlideShow6 .image
+{
+   border-width: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#Marquee5
+{
+   background-color: #EEEEEE;
+   background-image: none;
+   border: 1px #000000 solid;
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+   text-align: center;
+}
+#SlideShow7 .image
+{
+   border-width: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#Marquee6
+{
+   background-color: #EEEEEE;
+   background-image: none;
+   border: 1px #000000 solid;
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+   text-align: center;
+}
+#RollOver2 a
+{
+   display: block;
+   position: relative;
+   height: 100%;
+   width: 100%;
+}
+#RollOver2 a img
+{
+   position: absolute;
+   z-index: 1;
+   border-width: 0;
+}
+#RollOver2 span
+{
+   display: block;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   z-index: 2;
+}
+#RollOver2 a .hover
+{
+   visibility: hidden;
+}
+#RollOver2 a:hover .hover
+{
+   visibility: visible;
+}
+#RollOver2 a:hover span
+{
+   visibility: hidden;
+}
+#RollOver2 img
+{
+   border-width: 0;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#RollOverText1 .description
+{
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 13px;
+   margin: 0;
+   padding: 0px 10px 0px 10px;
+   text-align: center;
+}
+#RollOverText1 .link
+{
+   display: inline-block;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   font-style: normal;
+   color: #FFFFFF;
+   padding: 0px 10px 10px 10px;
+   text-decoration: underline;
+}
+#RollOverText1 .title
+{
+   text-align: center;
+   padding: 10px 10px 0px 10px;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 13px;
+   color: #FFFFFF;
+}
+#RollOverText1 .caption
+{
+   float: left;
+   position: absolute;
+   left: 0;
+   top: 0;
+   text-align: center;
+   background: #000000;
+   width: 100%;
+   opacity: 0;
+}
+#RollOverText1 .image
+{
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#RollOverText1
+{
+   border-width: 0;
+}
+#RollOverText2 .description
+{
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   margin: 0;
+   padding: 0px 10px 0px 10px;
+   text-align: center;
+}
+#RollOverText2 .link
+{
+   display: inline-block;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   font-style: normal;
+   color: #FFFFFF;
+   padding: 0px 10px 10px 10px;
+   text-decoration: underline;
+}
+#RollOverText2 .title
+{
+   text-align: center;
+   padding: 10px 10px 0px 10px;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 13px;
+   color: #FFFFFF;
+}
+#RollOverText2 .caption
+{
+   float: left;
+   position: absolute;
+   left: 0;
+   top: 0;
+   text-align: center;
+   background: #000000;
+   width: 100%;
+   opacity: 0;
+}
+#RollOverText2 .image
+{
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#RollOverText2
+{
+   border-width: 0;
+}
+#RollOverText3 .description
+{
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   margin: 0;
+   padding: 0px 10px 0px 10px;
+   text-align: center;
+}
+#RollOverText3 .link
+{
+   display: inline-block;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   font-style: normal;
+   color: #FFFFFF;
+   padding: 0px 10px 10px 10px;
+   text-decoration: underline;
+}
+#RollOverText3 .title
+{
+   text-align: center;
+   padding: 10px 10px 0px 10px;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 13px;
+   color: #FFFFFF;
+}
+#RollOverText3 .caption
+{
+   float: left;
+   position: absolute;
+   left: 0;
+   top: 0;
+   text-align: center;
+   background: #000000;
+   width: 100%;
+   opacity: 0;
+}
+#RollOverText3 .image
+{
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#RollOverText3
+{
+   border-width: 0;
+}
+#Image1
+{
+   border-width: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
